@@ -16,6 +16,9 @@ class Ship{
     size_t crew_;
     
     public:
+    //operators
+    Ship& Ship::operator+=(int addCrew);
+    Ship& Ship::operator-=(int subCrew);
     //constructors    
     Ship();
     Ship(std::string name, int id, size_t maxCrew, size_t capacity, size_t speed);
