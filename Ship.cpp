@@ -1,28 +1,32 @@
-#include "Ship.h"
+#include "ship.h"
    
 
-//operators
-    Ship& Ship::operator+=(int addCrew){
-        crew_+=addCrew;
-        std::cout<<"You get new Crew in ammount : "
-                 << addCrew <<std::endl;
-        return *this;
-    };
-    Ship& Ship::operator-=(int subCrew){
-        crew_-=subCrew;
-        std::cout<<"You have remove a crew in amount : "
-                 << subCrew <<std::endl;
-        return *this;
-    };
+//operator
 // consturctors
 
 Ship::Ship(): id_(-1){};
 
-Ship::Ship(std::string name, int id, size_t maxCrew, size_t capacity, size_t speed)
-    :name_(name),id_(id),maxCrew_(maxCrew),capacity_(capacity),speed_(speed){};
+Ship::Ship(std::string name
+,int id
+,size_t maxCrew
+,size_t capacity
+,size_t speed
+,size_t crew)
+    :name_(name)
+    ,id_(id)
+    ,maxCrew_(maxCrew)
+    ,capacity_(capacity)
+    ,speed_(speed)
+    ,crew_(crew)
+    {};
 
     /// functions setters  
-void Ship::setName(std::string n){name_=n;}
+void Ship::setName(std::string& n){
+    name_= n;
+    std::cout<<"you change name to : " << n ;
+    }
 
     // functions getters
-std::string Ship::getName(){return name_;}
+std::string Ship::getName(){
+    return name_;
+    }

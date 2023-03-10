@@ -17,17 +17,22 @@ class Ship{
     
     public:
     //operators
-    Ship& Ship::operator+=(int addCrew);
-    Ship& Ship::operator-=(int subCrew);
+   
     //constructors    
     Ship();
-    Ship(std::string name, int id, size_t maxCrew, size_t capacity, size_t speed);
+    Ship(std::string name
+    ,int id
+    ,size_t maxCrew
+    ,size_t capacity
+    ,size_t speed
+    ,size_t crew);
 
     /// functions setters  
-    void setName(std::string n);
+    void setName(std::string& n);
+    
 
     // functions getters
     std::string getName();
 };
 
-#endif 
+#endif //SHIP_H

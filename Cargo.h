@@ -10,9 +10,7 @@ private:
     float basicPrice_;
 public:
     Cargo();
-    Cargo(std::string name,size_t amount, float basicPrice);
-    Cargo& operator+=(const size_t);
-    Cargo& operator-=(const size_t);
+    Cargo(std::string n,size_t a,float bp);
 };
 
-#endif
+#endif //CARGO_H
