@@ -4,13 +4,20 @@
 
 class Cargo
 {
+public:
+
+//operator 
+    Cargo& operator+=(const int);
+
+//constructors 
+    Cargo();
+    Cargo(std::string n,int a,float bp,int cs);
+
 private:
     std::string name_;
-    size_t amount_;
+    int amount_;
     float basicPrice_;
-public:
-    Cargo();
-    Cargo(std::string n,size_t a,float bp);
+    int cargoSize_;
 };
 
 #endif //CARGO_H

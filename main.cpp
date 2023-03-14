@@ -1,14 +1,17 @@
 #include <vector>
 #include <iostream>
 #include <string>
-#include "ship.h" 
-#include "Cargo.h"
+#include "Ship.h"
 
 int main(){
 
-    Ship neo_("Neo",07,20,50,10,10);
+    Ship neo_("Neo",07,20,50,10,20);
 
-    std::cout<<neo_.getName(); 
+    neo_.getAllInfo();
 
+    neo_ += 10;
+    neo_.getAllInfo();
+    neo_ -= 30;
+    neo_.getAllInfo();
     return 0;
 }
