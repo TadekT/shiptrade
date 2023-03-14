@@ -4,9 +4,11 @@
 #include <vector>
 #include <iostream>
 #include <string>
-
+#include <memory>
 class Ship{
     public:
+
+  //std::vector<std::shared_ptr<Cargo>> shipLoad{};
     //operator
     Ship& operator+=(const int);
     Ship& operator-=(const int);
