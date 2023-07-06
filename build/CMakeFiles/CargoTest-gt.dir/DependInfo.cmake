@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ted/Desktop/vs/shiptrade/Ship-gt.cpp" "CMakeFiles/ShipTrade.dir/Ship-gt.cpp.o" "gcc" "CMakeFiles/ShipTrade.dir/Ship-gt.cpp.o.d"
-  "/home/ted/Desktop/vs/shiptrade/Ship.cpp" "CMakeFiles/ShipTrade.dir/Ship.cpp.o" "gcc" "CMakeFiles/ShipTrade.dir/Ship.cpp.o.d"
+  "/home/ted/Desktop/vs/shiptrade/scr/Cargo.cpp" "CMakeFiles/CargoTest-gt.dir/scr/Cargo.cpp.o" "gcc" "CMakeFiles/CargoTest-gt.dir/scr/Cargo.cpp.o.d"
+  "/home/ted/Desktop/vs/shiptrade/test-scr/Cargo-gt.cpp" "CMakeFiles/CargoTest-gt.dir/test-scr/Cargo-gt.cpp.o" "gcc" "CMakeFiles/CargoTest-gt.dir/test-scr/Cargo-gt.cpp.o.d"
   )
 
 # Targets to which this target links.

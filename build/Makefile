@@ -172,17 +172,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ShipTrade
+# Target rules for targets named ShipTest-gt
 
 # Build rule for target.
-ShipTrade: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ShipTrade
-.PHONY : ShipTrade
+ShipTest-gt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ShipTest-gt
+.PHONY : ShipTest-gt
 
 # fast build rule for target.
-ShipTrade/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/build
-.PHONY : ShipTrade/fast
+ShipTest-gt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/build
+.PHONY : ShipTest-gt/fast
+
+#=============================================================================
+# Target rules for targets named CargoTest-gt
+
+# Build rule for target.
+CargoTest-gt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CargoTest-gt
+.PHONY : CargoTest-gt
+
+# fast build rule for target.
+CargoTest-gt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/build
+.PHONY : CargoTest-gt/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -236,53 +249,101 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-Ship-gt.o: Ship-gt.cpp.o
-.PHONY : Ship-gt.o
+scr/Cargo.o: scr/Cargo.cpp.o
+.PHONY : scr/Cargo.o
 
 # target to build an object file
-Ship-gt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/Ship-gt.cpp.o
-.PHONY : Ship-gt.cpp.o
+scr/Cargo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/scr/Cargo.cpp.o
+.PHONY : scr/Cargo.cpp.o
 
-Ship-gt.i: Ship-gt.cpp.i
-.PHONY : Ship-gt.i
+scr/Cargo.i: scr/Cargo.cpp.i
+.PHONY : scr/Cargo.i
 
 # target to preprocess a source file
-Ship-gt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/Ship-gt.cpp.i
-.PHONY : Ship-gt.cpp.i
+scr/Cargo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/scr/Cargo.cpp.i
+.PHONY : scr/Cargo.cpp.i
 
-Ship-gt.s: Ship-gt.cpp.s
-.PHONY : Ship-gt.s
+scr/Cargo.s: scr/Cargo.cpp.s
+.PHONY : scr/Cargo.s
 
 # target to generate assembly for a file
-Ship-gt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/Ship-gt.cpp.s
-.PHONY : Ship-gt.cpp.s
+scr/Cargo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/scr/Cargo.cpp.s
+.PHONY : scr/Cargo.cpp.s
 
-Ship.o: Ship.cpp.o
-.PHONY : Ship.o
+scr/Ship.o: scr/Ship.cpp.o
+.PHONY : scr/Ship.o
 
 # target to build an object file
-Ship.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/Ship.cpp.o
-.PHONY : Ship.cpp.o
+scr/Ship.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/scr/Ship.cpp.o
+.PHONY : scr/Ship.cpp.o
 
-Ship.i: Ship.cpp.i
-.PHONY : Ship.i
+scr/Ship.i: scr/Ship.cpp.i
+.PHONY : scr/Ship.i
 
 # target to preprocess a source file
-Ship.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/Ship.cpp.i
-.PHONY : Ship.cpp.i
+scr/Ship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/scr/Ship.cpp.i
+.PHONY : scr/Ship.cpp.i
 
-Ship.s: Ship.cpp.s
-.PHONY : Ship.s
+scr/Ship.s: scr/Ship.cpp.s
+.PHONY : scr/Ship.s
 
 # target to generate assembly for a file
-Ship.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTrade.dir/build.make CMakeFiles/ShipTrade.dir/Ship.cpp.s
-.PHONY : Ship.cpp.s
+scr/Ship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/scr/Ship.cpp.s
+.PHONY : scr/Ship.cpp.s
+
+test-scr/Cargo-gt.o: test-scr/Cargo-gt.cpp.o
+.PHONY : test-scr/Cargo-gt.o
+
+# target to build an object file
+test-scr/Cargo-gt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/test-scr/Cargo-gt.cpp.o
+.PHONY : test-scr/Cargo-gt.cpp.o
+
+test-scr/Cargo-gt.i: test-scr/Cargo-gt.cpp.i
+.PHONY : test-scr/Cargo-gt.i
+
+# target to preprocess a source file
+test-scr/Cargo-gt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/test-scr/Cargo-gt.cpp.i
+.PHONY : test-scr/Cargo-gt.cpp.i
+
+test-scr/Cargo-gt.s: test-scr/Cargo-gt.cpp.s
+.PHONY : test-scr/Cargo-gt.s
+
+# target to generate assembly for a file
+test-scr/Cargo-gt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CargoTest-gt.dir/build.make CMakeFiles/CargoTest-gt.dir/test-scr/Cargo-gt.cpp.s
+.PHONY : test-scr/Cargo-gt.cpp.s
+
+test-scr/Ship-gt.o: test-scr/Ship-gt.cpp.o
+.PHONY : test-scr/Ship-gt.o
+
+# target to build an object file
+test-scr/Ship-gt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/test-scr/Ship-gt.cpp.o
+.PHONY : test-scr/Ship-gt.cpp.o
+
+test-scr/Ship-gt.i: test-scr/Ship-gt.cpp.i
+.PHONY : test-scr/Ship-gt.i
+
+# target to preprocess a source file
+test-scr/Ship-gt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/test-scr/Ship-gt.cpp.i
+.PHONY : test-scr/Ship-gt.cpp.i
+
+test-scr/Ship-gt.s: test-scr/Ship-gt.cpp.s
+.PHONY : test-scr/Ship-gt.s
+
+# target to generate assembly for a file
+test-scr/Ship-gt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShipTest-gt.dir/build.make CMakeFiles/ShipTest-gt.dir/test-scr/Ship-gt.cpp.s
+.PHONY : test-scr/Ship-gt.cpp.s
 
 # Help Target
 help:
@@ -297,17 +358,24 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... ShipTrade"
+	@echo "... CargoTest-gt"
+	@echo "... ShipTest-gt"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... Ship-gt.o"
-	@echo "... Ship-gt.i"
-	@echo "... Ship-gt.s"
-	@echo "... Ship.o"
-	@echo "... Ship.i"
-	@echo "... Ship.s"
+	@echo "... scr/Cargo.o"
+	@echo "... scr/Cargo.i"
+	@echo "... scr/Cargo.s"
+	@echo "... scr/Ship.o"
+	@echo "... scr/Ship.i"
+	@echo "... scr/Ship.s"
+	@echo "... test-scr/Cargo-gt.o"
+	@echo "... test-scr/Cargo-gt.i"
+	@echo "... test-scr/Cargo-gt.s"
+	@echo "... test-scr/Ship-gt.o"
+	@echo "... test-scr/Ship-gt.i"
+	@echo "... test-scr/Ship-gt.s"
 .PHONY : help
 
 

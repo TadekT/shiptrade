@@ -1,5 +1,6 @@
-CMakeFiles/ShipTrade.dir/Ship-gt.cpp.o: \
- /home/ted/Desktop/vs/shiptrade/Ship-gt.cpp /usr/include/stdc-predef.h \
+CMakeFiles/ShipTest-gt.dir/test-scr/Ship-gt.cpp.o: \
+ /home/ted/Desktop/vs/shiptrade/test-scr/Ship-gt.cpp \
+ /usr/include/stdc-predef.h \
  /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -273,4 +274,4 @@ CMakeFiles/ShipTrade.dir/Ship-gt.cpp.o: \
  /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- /home/ted/Desktop/vs/shiptrade/Heders/Ship.h
+ /home/ted/Desktop/vs/shiptrade/test-scr/../Heders/Ship.h

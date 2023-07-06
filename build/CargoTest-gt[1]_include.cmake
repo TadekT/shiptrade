@@ -1,0 +1,5 @@
+if(EXISTS "/home/ted/Desktop/vs/shiptrade/build/CargoTest-gt[1]_tests.cmake")
+  include("/home/ted/Desktop/vs/shiptrade/build/CargoTest-gt[1]_tests.cmake")
+else()
+  add_test(CargoTest-gt_NOT_BUILT CargoTest-gt_NOT_BUILT)
+endif()

@@ -17,10 +17,11 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 
-# set(HEADERS 
-#     Heders/Ship.h
-# )
-# include_directories(${HEADERS})
+set(HEADERS 
+Heders/Cargo.h
+Heders/Ship.h
+)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Heders)
 
 
 
@@ -29,17 +30,28 @@ add_executable(
   ShipTest-gt
   test-scr/Ship-gt.cpp
   scr/Ship.cpp
-)
-target_link_directories()
-add_executable(
-  CargoTest-gt
+  )
+  
+  add_executable(
+    CargoTest-gt
   test-scr/Cargo-gt.cpp
   scr/Cargo.cpp
-)
-target_link_libraries(
-${PROJECT_NAME}
-GTest::gtest_main
-)
+  )
+  
+  target_link_libraries(
+    ShipTest-gt
+    GTest::gtest_main
+    )
+    
+    target_link_libraries(
+      CargoTest-gt
+      GTest::gtest_main
+      )
+      
+      target_include_directories(ShipTest-gt PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Heders)
+      
 
-include(GoogleTest)
-gtest_discover_tests(${PROJECT_NAME})
+      include(GoogleTest)
+      gtest_discover_tests(CargoTest-gt)
+      gtest_discover_tests(ShipTest-gt)
+      

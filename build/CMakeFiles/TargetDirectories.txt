@@ -1,4 +1,5 @@
-/home/ted/Desktop/vs/shiptrade/build/CMakeFiles/ShipTrade.dir
+/home/ted/Desktop/vs/shiptrade/build/CMakeFiles/ShipTest-gt.dir
+/home/ted/Desktop/vs/shiptrade/build/CMakeFiles/CargoTest-gt.dir
 /home/ted/Desktop/vs/shiptrade/build/CMakeFiles/test.dir
 /home/ted/Desktop/vs/shiptrade/build/CMakeFiles/edit_cache.dir
 /home/ted/Desktop/vs/shiptrade/build/CMakeFiles/rebuild_cache.dir

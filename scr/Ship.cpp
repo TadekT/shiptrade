@@ -1,5 +1,5 @@
-#include "Heders/Ship.h"
-#include "Heders/Cargo.h"
+#include "../Heders/Ship.h"
+#include "../Heders/Cargo.h"
 
 Ship &Ship::operator+=(const int cw)
 {
