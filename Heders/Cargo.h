@@ -4,6 +4,12 @@
 
 class Cargo
 {
+private:
+    std::string name_;
+    int amount_;
+    float basicPrice_;
+    int cargoWeight_;
+
 public:
     std::string const getName();
     int const getAmount();
@@ -16,13 +22,8 @@ public:
 
 //constructors 
     Cargo();
-    Cargo(std::string n,int a,float bp,int cs);
+    Cargo(std::string name,int amount,float basicPrice,int cargoWeight);
 
-private:
-    std::string name_;
-    int amount_;
-    float basicPrice_;
-    int cargoWeight_;
 };
 
 #endif //CARGO_H
