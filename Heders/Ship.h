@@ -1,7 +1,6 @@
 #ifndef SHIP_H
 #define SHIP_H
 
-#include "Storage.h"
 #include <vector>
 #include <iostream>
 #include <string>
@@ -17,8 +16,7 @@ class Ship{
 
     
     public:
-    Storage shipStorage;
-    //std::vector<std::shared_ptr<Cargo>> shipLoad{};
+
     //operator
     Ship& operator+=(const int);
     Ship& operator-=(const int);

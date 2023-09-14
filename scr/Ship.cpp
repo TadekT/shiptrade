@@ -40,7 +40,7 @@ Ship::Ship(int id, int maxCrew, size_t speed)
 std::string Ship::setName(std::string &n)
 {
     name_ = n;
-    std::cout << "you change name to : " << n;
+    std::cout << "Change name to : " << n;
     return name_;
 }
 //////////////////////////////////////

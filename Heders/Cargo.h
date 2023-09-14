@@ -23,7 +23,7 @@ public:
 //constructors 
     Cargo();
     Cargo(std::string name,int amount,float basicPrice,int cargoWeight);
-
+    
 };
 
 #endif //CARGO_H
