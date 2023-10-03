@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ShipTest-gt.dir/test-scr/Ship-gt.cpp.o CMakeFiles/ShipTest-gt.dir/scr/Ship.cpp.o -o ShipTest-gt  lib/libgtest_main.a lib/libgtest.a 

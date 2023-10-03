@@ -1,11 +1,12 @@
 #include <vector>
 #include <iostream>
 #include <string>
-#include "Ship.h"
+#include "Heders/Ship.h"
+#include "Heders/Cargo.h"
 
 int main(){
 
-    Ship neo_("Neo",07,20,50,10,20);
+    Ship neo_("Neo",7,20,50,10,20);
 
     neo_.getAllInfo();
 

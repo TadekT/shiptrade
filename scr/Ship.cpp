@@ -1,9 +1,9 @@
-#include "Heders/Ship.h"
-#include "Heders/Cargo.h"
+#include "../Heders/Ship.h"
+
 
 Ship &Ship::operator+=(const int cw)
 {
-    if (cw > maxCrew_ && cw < 0)
+    if (cw > maxCrew_ || cw < 0)
     {
         std::cout << " Now way, Inccorect number";
     }
@@ -13,7 +13,7 @@ Ship &Ship::operator+=(const int cw)
 }
 Ship &Ship::operator-=(const int cw)
 {
-    if (cw > maxCrew_ && cw < 0)
+    if (cw > maxCrew_ || cw < 0)
     {
         std::cout << " Now way, Inccorect number";
     }

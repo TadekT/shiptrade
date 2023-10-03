@@ -10,12 +10,20 @@ cmake_minimum_required(VERSION 3.22.1)
 project(googletest-populate NONE)
 
 
+# Pass through things we've already detected in the main project to avoid
+# paying the cost of redetecting them again in ExternalProject_Add()
+set(GIT_EXECUTABLE [==[/usr/bin/git]==])
+set(GIT_VERSION_STRING [==[2.34.1]==])
+set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
+  [==[/usr/bin/git;2.34.1]==]
+)
+
 
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
-                     "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip"
-                    SOURCE_DIR          "/home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src"
-                    BINARY_DIR          "/home/ted/Desktop/vs/shiptrade/build/_deps/googletest-build"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/google/googletest.git" "GIT_TAG" "main"
+                    SOURCE_DIR          "/home/ted/Repos/shiptrade/build/_deps/googletest-src"
+                    BINARY_DIR          "/home/ted/Repos/shiptrade/build/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -40,10 +40,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
   "/usr/share/cmake-3.22/Modules/FetchContent.cmake"
   "/usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in"
+  "/usr/share/cmake-3.22/Modules/FindGit.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
-  "/usr/share/cmake-3.22/Modules/FindPython.cmake"
   "/usr/share/cmake-3.22/Modules/FindPython/Support.cmake"
+  "/usr/share/cmake-3.22/Modules/FindPython3.cmake"
   "/usr/share/cmake-3.22/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake-3.22/Modules/GoogleTest.cmake"
@@ -79,7 +80,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ShipTrade.dir/DependInfo.cmake"
+  "CMakeFiles/ShipTest-gt.dir/DependInfo.cmake"
+  "CMakeFiles/CargoTest-gt.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

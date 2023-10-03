@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
-#include "Heders/Ship.h"
+#include "../Heders/Ship.h"
+#include "gtest/gtest.h"
 
 
 // TEST(falseTest, CMakeTest)

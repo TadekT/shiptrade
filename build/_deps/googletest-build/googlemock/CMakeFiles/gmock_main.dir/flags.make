@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googlemock/include -isystem /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googlemock -isystem /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googletest/include -isystem /home/ted/Desktop/vs/shiptrade/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/ted/Repos/shiptrade../Heders -isystem /home/ted/Repos/shiptrade/build/_deps/googletest-src/googlemock/include -isystem /home/ted/Repos/shiptrade/build/_deps/googletest-src/googlemock -isystem /home/ted/Repos/shiptrade/build/_deps/googletest-src/googletest/include -isystem /home/ted/Repos/shiptrade/build/_deps/googletest-src/googletest
 
-CXX_FLAGS = -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+CXX_FLAGS = -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
 

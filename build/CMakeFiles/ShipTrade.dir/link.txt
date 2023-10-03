@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ShipTrade.dir/Ship-gt.cpp.o CMakeFiles/ShipTrade.dir/Ship.cpp.o -o ShipTrade  lib/libgtest_main.a lib/libgtest.a 

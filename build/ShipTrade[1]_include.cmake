@@ -1,5 +1,0 @@
-if(EXISTS "/home/ted/Desktop/vs/shiptrade/build/ShipTrade[1]_tests.cmake")
-  include("/home/ted/Desktop/vs/shiptrade/build/ShipTrade[1]_tests.cmake")
-else()
-  add_test(ShipTrade_NOT_BUILT ShipTrade_NOT_BUILT)
-endif()
