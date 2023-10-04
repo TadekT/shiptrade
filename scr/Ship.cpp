@@ -52,7 +52,7 @@ std::string Ship::getName()
     return name_;
 }
 
-int Ship::getId(){return id_;};
+const int Ship::getId(){return id_;};
 int Ship::getMaxCrew(){return maxCrew_;};
 size_t Ship::getCapacity(){return capacity_;};
 size_t Ship::getSpeed(){return speed_;};

@@ -1,5 +1,4 @@
-#ifndef CARGO_H
-#define CARGO_H
+#pragma once
 #include <string>
 
 class Cargo
@@ -16,7 +15,7 @@ public:
 
 //constructors 
     Cargo();
-    Cargo(std::string n,int a,float bp,int cs);
+    Cargo(std::string n,int a,float bp,int cW);
 
 private:
     std::string name_;
@@ -25,4 +24,3 @@ private:
     int cargoWeight_;
 };
 
-#endif //CARGO_H

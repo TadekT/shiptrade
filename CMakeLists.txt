@@ -23,7 +23,11 @@ Heders/Ship.h
 )
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Heders)
 
-
+add_executable(
+  Ship
+    main.cpp
+    scr/Ship.cpp
+  )
 
 
 add_executable(

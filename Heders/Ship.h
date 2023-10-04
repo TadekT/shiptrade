@@ -1,6 +1,4 @@
-
-#ifndef SHIP_H
-#define SHIP_H
+#pragma once
 #include <vector>
 #include <iostream>
 #include <string>
@@ -25,7 +23,7 @@ class Ship{
     // functions getters
   
     std::string getName();
-    int getId();
+    const int getId();
     int getMaxCrew();
     size_t getCapacity();
     size_t getSpeed();
@@ -41,4 +39,3 @@ class Ship{
     size_t crew_;
 };
 
-#endif //SHIP_H
