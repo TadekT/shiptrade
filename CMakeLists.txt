@@ -23,6 +23,7 @@ Heders/Ship.h
 )
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Heders)
 
+
 add_executable(
   Ship
     main.cpp
@@ -30,17 +31,18 @@ add_executable(
   )
 
 
+
 add_executable(
   ShipTest-gt
   test-scr/Ship-gt.cpp
   scr/Ship.cpp
-  )
+   "Heders/Storage.h" "scr/Storage.cpp")
   
   add_executable(
     CargoTest-gt
   test-scr/Cargo-gt.cpp
   scr/Cargo.cpp
-  )
+   "Heders/Storage.h" "scr/Storage.cpp")
   
   target_link_libraries(
     ShipTest-gt

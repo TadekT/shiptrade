@@ -1,12 +1,21 @@
 #pragma once
+
 #include <vector>
 #include <iostream>
 #include <string>
 #include <memory>
 class Ship{
+    private:
+    std::string name_;
+    int id_;
+    int maxCrew_;
+    size_t capacity_;
+    size_t speed_;
+    size_t crew_;
+
+    
     public:
 
-  //std::vector<std::shared_ptr<Cargo>> shipLoad{};
     //operator
     Ship& operator+=(const int);
     Ship& operator-=(const int);
@@ -30,12 +39,5 @@ class Ship{
     size_t getCrew();
     void getAllInfo();
 
-    private:
-    std::string name_;
-    int id_;
-    int maxCrew_;
-    size_t capacity_;
-    size_t speed_;
-    size_t crew_;
 };
 

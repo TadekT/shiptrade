@@ -9,9 +9,14 @@
 //operatorts
 
 //constructors
-Cargo::Cargo()
-:name_("Trash"),amount_(1),basicPrice_(0),cargoWeight_(1){}
-
-Cargo::Cargo(std::string n,int a,float bp,int cW)
-:name_(n),amount_{a},basicPrice_(bp),cargoWeight_(cW){}
-
+    Cargo::Cargo()
+        :name_("Trash"),
+        amount_(1),
+        basicPrice_(0),
+        cargoWeight_(1){};
+    
+    Cargo::Cargo(std::string name, int amount, float basicPrice, int cargoWeight)
+        :name_(name),
+         amount_{amount},
+         basicPrice_(basicPrice),
+         cargoWeight_(cargoWeight){};
