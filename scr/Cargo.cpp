@@ -20,5 +20,3 @@
          amount_{amount},
          basicPrice_(basicPrice),
          cargoWeight_(cargoWeight){};
-
-

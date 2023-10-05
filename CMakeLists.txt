@@ -25,10 +25,12 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Heders)
 
 
 add_executable(
-    ${PROJECT_NAME}    
+  Ship
     main.cpp
     scr/Ship.cpp
- "Heders/Storage.h" "scr/Storage.cpp")
+  )
+
+
 
 add_executable(
   ShipTest-gt

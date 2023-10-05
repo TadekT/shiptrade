@@ -1,5 +1,4 @@
-#ifndef CARGO_H
-#define CARGO_H
+#pragma once
 #include <string>
 
 class Cargo
@@ -24,6 +23,6 @@ public:
     Cargo();
     Cargo(std::string name,int amount,float basicPrice,int cargoWeight);
     
+
 };
 
-#endif //CARGO_H
