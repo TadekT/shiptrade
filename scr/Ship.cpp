@@ -25,10 +25,11 @@ Ship &Ship::operator-=(const int cw)
 
 // consturctors
 
-Ship::Ship() : id_(-1){};
+Ship::Ship(){};
 
 Ship::Ship(std::string name, int id, int maxCrew, size_t capacity, size_t speed, size_t crew)
     : name_(name), id_(id), maxCrew_(maxCrew), capacity_(capacity), speed_(speed), crew_(crew){};
+
 
 Ship::Ship(int id, int maxCrew, size_t speed)
     : Ship("Boat", id, maxCrew, 50, speed, 10){};

@@ -4,17 +4,19 @@
 #include <iostream>
 #include <string>
 #include <memory>
+#include "../Heders/Cargo.h"
 class Ship{
-    private:
-    std::string name_;
-    int id_;
-    int maxCrew_;
-    size_t capacity_;
-    size_t speed_;
-    size_t crew_;
+private:
 
-    
-    public:
+    std::vector<Cargo> storage{};
+    std::string name_{""};
+    int id_{0};
+    int maxCrew_{0};
+    size_t capacity_{0};
+    size_t speed_{0};
+    size_t crew_{0};
+ 
+public:
 
     //operator
     Ship& operator+=(const int);
