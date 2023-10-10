@@ -3,6 +3,11 @@
 
 class Cargo
 {
+private:
+    std::string name_{"Trash"};
+    int amount_{1};
+    float basicPrice_{0.f};
+    int cargoWeight_{1};
 public:
     std::string const getName();
     int const getAmount();
@@ -17,10 +22,5 @@ public:
     Cargo();
     Cargo(std::string n,int a,float bp,int cW);
 
-private:
-    std::string name_;
-    int amount_;
-    float basicPrice_;
-    int cargoWeight_;
 };
 

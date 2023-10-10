@@ -3,8 +3,19 @@
 #include <iostream>
 #include <string>
 #include <memory>
+#include "../Heders/Cargo.h"
 class Ship{
-    public:
+private:
+
+    std::vector<Cargo> storage{};
+    std::string name_{""};
+    int id_{0};
+    int maxCrew_{0};
+    size_t capacity_{0};
+    size_t speed_{0};
+    size_t crew_{0};
+ 
+public:
 
   //std::vector<std::shared_ptr<Cargo>> shipLoad{};
     //operator
@@ -30,12 +41,5 @@ class Ship{
     size_t getCrew();
     void getAllInfo();
 
-    private:
-    std::string name_;
-    int id_;
-    int maxCrew_;
-    size_t capacity_;
-    size_t speed_;
-    size_t crew_;
 };
 
