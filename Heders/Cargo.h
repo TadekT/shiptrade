@@ -20,7 +20,8 @@ public:
 
 //constructors 
     Cargo();
-    Cargo(std::string n,int a,float bp,int cW);
+    Cargo(std::string name,int amount,float basicPrice,int cargoWeight);
+    
 
 };
 

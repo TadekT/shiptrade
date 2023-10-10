@@ -1,4 +1,5 @@
 #pragma once
+
 #include <vector>
 #include <iostream>
 #include <string>
@@ -17,7 +18,6 @@ private:
  
 public:
 
-  //std::vector<std::shared_ptr<Cargo>> shipLoad{};
     //operator
     Ship& operator+=(const int);
     Ship& operator-=(const int);
