@@ -28,6 +28,7 @@ add_executable(
   Ship
     main.cpp
     scr/Ship.cpp
+    scr/Cargo.cpp
   )
 
 
@@ -35,14 +36,12 @@ add_executable(
 add_executable(
   ShipTest-gt
   test-scr/Ship-gt.cpp
-  scr/Ship.cpp
-   "Heders/Storage.h" "scr/Storage.cpp")
+  scr/Ship.cpp)
   
   add_executable(
     CargoTest-gt
   test-scr/Cargo-gt.cpp
-  scr/Cargo.cpp
-   "Heders/Storage.h" "scr/Storage.cpp")
+  scr/Cargo.cpp)
   
   target_link_libraries(
     ShipTest-gt
